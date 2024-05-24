@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            var currentPath = window.location.pathname;
+            var newDomain = "https://aiverify-foundation.github.io";
+            var newUrl = newDomain + currentPath;
+            window.location.href = newUrl;
+        });
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, follow this <a id="redirect-link" href="#">link to the new site</a>.</p>
+    <script type="text/javascript">
+        document.getElementById('redirect-link').href = newDomain + currentPath;
+    </script>
+</body>
+</html>
